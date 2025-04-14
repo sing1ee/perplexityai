@@ -52,7 +52,7 @@ export default function Home({
                 <circle cx="5" cy="19" r="1" />
               </svg>
             </Link>
-            <Link href="https://github.com" className="text-gray-500 hover:text-gray-700">
+            <Link href="https://github.com/sing1ee" className="text-gray-500 hover:text-gray-700">
               <span className="sr-only">GitHub</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function Home({
                 <path d="M9 18c-4.51 2-5-2-7-2" />
               </svg>
             </Link>
-            <Link href="https://twitter.com" className="text-gray-500 hover:text-gray-700">
+            <Link href="https://twitter.com/chmilo" className="text-gray-500 hover:text-gray-700">
               <span className="sr-only">Twitter</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
