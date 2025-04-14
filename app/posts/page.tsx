@@ -25,7 +25,7 @@ export default async function PostsPage({
               <div className="text-xs text-gray-500 mb-3 font-serif italic">
                 {formatDate(post.created_at)}
               </div>
-              <p className="text-gray-700 leading-relaxed">{post.parsedContent?.note}</p>
+              <p className="text-gray-700 leading-relaxed">{post.parsedContent?.note.slice(0, 200)}...</p>
             </Link>
           </article>
         ))}
