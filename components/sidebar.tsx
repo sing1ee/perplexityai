@@ -42,7 +42,7 @@ export default function Sidebar() {
               <circle cx="5" cy="19" r="1" />
             </svg>
           </Link>
-          <Link href="https://github.com/sing1ee" className="text-gray-500 hover:text-gray-700">
+          <Link href="https://github.com/sing1ee" target="_blank" className="text-gray-500 hover:text-gray-700">
             <span className="sr-only">GitHub</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Sidebar() {
               <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
           </Link>
-          <Link href="https://x.com/chmilo" className="text-gray-500 hover:text-gray-700">
+          <Link href="https://x.com/chmilo" target="_blank" className="text-gray-500 hover:text-gray-700">
             <span className="sr-only">Twitter</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
