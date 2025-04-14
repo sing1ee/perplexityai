@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="white"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" 
+        font-family="Baskerville, Georgia, serif" 
+        font-size="24" 
+        font-weight="600"
+        fill="black">
+    P
+  </text>
+</svg> 

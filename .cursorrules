@@ -1,17 +1,4 @@
 始终使用中文回复。
 使用 next.js+tailwindcss，服务器端渲染的网站。
 使用 github api 获取 issue 列表数据进行展示。
-issues: https://github.com/sing1ee/url-notes/issues
-每一个 issue 的格式
-- 标题
-- issue 创建时间
-- 内容是：
-  URL: https://github.com/DeepLifeStudio/DeepSeekAI
-  Time: 2025/1/10 20:48:11
-  Note: 基于 DeepSeek AI 大模型的浏览器扩展插件
-
-  Note 可能多行。解析的Time 不再使用。得到标题，创建时间，URL，以及 note，在网页上展示。
-网站风格：
-- 使用 tailwindcss 进行样式设计
-- 使用 next.js 进行服务器端渲染
 - 

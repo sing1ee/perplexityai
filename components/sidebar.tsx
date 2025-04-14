@@ -4,18 +4,18 @@ export default function Sidebar() {
   return (
     <aside className="w-full md:w-64 p-8 md:p-12 bg-white">
       <div className="sticky top-8">
-        <h1 className="font-serif text-3xl mb-1 text-center">PerplexityAI</h1>
+        <h1 className="font-serif text-3xl mb-1 text-center font-serif italic">PerplexityAI</h1>
         <p className="text-center text-gray-600 italic font-serif text-sm mb-12">Notes from the AI frontier</p>
 
         <nav className="mb-12">
           <ul className="space-y-4 text-center">
             <li>
-              <Link href="/posts" className="font-serif hover:text-gray-600">
+              <Link href="/posts" className="font-serif italic hover:text-gray-600">
                 Posts
               </Link>
             </li>
             <li>
-              <Link href="/about" className="font-serif hover:text-gray-600">
+              <Link href="/about" className="font-serif italic hover:text-gray-600">
                 About
               </Link>
             </li>

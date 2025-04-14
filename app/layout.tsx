@@ -12,9 +12,40 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Retypeset - Revive the beauty of typography",
-  description: "A static blog theme inspired by Typography",
-    generator: 'v0.dev'
+  title: {
+    default: 'PerplexityAI',
+    template: '%s | PerplexityAI'
+  },
+  description: 'Notes from the AI frontier',
+  openGraph: {
+    title: 'PerplexityAI',
+    description: 'Notes from the AI frontier',
+    url: 'https://perplexityai.com',
+    siteName: 'PerplexityAI',
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    shortcut: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
