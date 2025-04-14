@@ -20,7 +20,7 @@ export default async function PostsPage({
         <h1 className="text-3xl font-serif font-serif italic mb-6">All Posts</h1>
         {posts.map((post) => (
           <article key={post.number} className="mb-12">
-            <Link href={post.parsedContent?.url} className="block group">
+            <Link href={post.parsedContent?.url} target="_blank" className="block group">
               <h3 className="text-xl font-serif font-semibold mb-1">{post.title}</h3>
               <div className="text-xs text-gray-500 mb-3 font-serif italic">
                 {formatDate(post.created_at)}
