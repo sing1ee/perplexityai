@@ -1,29 +1,27 @@
 import Link from "next/link"
 import PostsPage from "./posts/page"
 
-
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams: { page?: string }
+}) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       <main className="flex-1 p-8 md:p-12 border-r border-gray-100">
-        <PostsPage />
+        <PostsPage searchParams={searchParams} />
       </main>
 
       <aside className="w-full md:w-64 p-8 md:p-12 bg-white">
         <div className="sticky top-8">
-          <h1 className="font-serif text-3xl mb-1 text-center">Retypeset</h1>
-          <p className="text-center text-gray-600 italic font-serif text-sm mb-12">Revive the beauty of typography</p>
+          <h1 className="font-serif text-3xl mb-1 text-center">PerplexityAI</h1>
+          <p className="text-center text-gray-600 italic font-serif text-sm mb-12">Notes from the AI frontier</p>
 
           <nav className="mb-12">
             <ul className="space-y-4 text-center">
               <li>
                 <Link href="/posts" className="font-serif hover:text-gray-600">
                   Posts
-                </Link>
-              </li>
-              <li>
-                <Link href="/tags" className="font-serif hover:text-gray-600">
-                  Tags
                 </Link>
               </li>
               <li>
@@ -92,8 +90,8 @@ export default function Home() {
           </div>
 
           <div className="text-xs text-center text-gray-500">
-            <p>Powered by Astro and Retypeset</p>
-            <p>© 2024-2025 ruizhz</p>
+            <p>Powered by Next.js</p>
+            <p>© 2024-2025 Milo</p>
           </div>
         </div>
       </aside>
