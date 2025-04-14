@@ -19,29 +19,15 @@ export default function Sidebar() {
                 About
               </Link>
             </li>
+            <li>
+              <Link href="https://github.com/sing1ee/url-notes/issues" target="_blank" className="font-serif italic hover:text-gray-600">
+                Discuss
+              </Link>
+            </li>
           </ul>
         </nav>
 
         <div className="flex justify-center space-x-4 mb-4">
-          <Link href="/rss" className="text-gray-500 hover:text-gray-700">
-            <span className="sr-only">RSS</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-rss"
-            >
-              <path d="M4 11a9 9 0 0 1 9 9" />
-              <path d="M4 4a16 16 0 0 1 16 16" />
-              <circle cx="5" cy="19" r="1" />
-            </svg>
-          </Link>
           <Link href="https://github.com/sing1ee" target="_blank" className="text-gray-500 hover:text-gray-700">
             <span className="sr-only">GitHub</span>
             <svg
