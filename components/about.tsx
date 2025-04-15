@@ -34,6 +34,18 @@ const works = [
     url: "https://deepbolt.xyz",
     icon: "https://deepbolt.xyz/favicon.svg",
     description: "Turn your ideas into OnePage"
+  },
+  {
+    title: "CurateClick",
+    url: "https://curateclick.com/",
+    icon: "https://curateclick.com/favicon.svg",
+    description: "Navigator for Indie Developers"
+  },
+  {
+    title: "PerplexityAI",
+    url: "https://perplexityai.xyz/",
+    icon: "https://perplexityai.xyz/favicon.svg",
+    description: "Notes from the AI frontier"
   }
 ]
 
