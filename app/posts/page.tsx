@@ -1,6 +1,20 @@
 import { getIssues } from "@/lib/github"
 import Sidebar from "@/components/sidebar";
 import PostsList from "@/components/post-list";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Posts',
+  description: 'Explore our latest articles and research on artificial intelligence and machine learning',
+  openGraph: {
+    title: 'Posts | PerplexityAI',
+    description: 'Explore our latest articles and research on artificial intelligence and machine learning',
+    url: 'https://perplexityai.xyz/posts',
+  },
+  alternates: {
+    canonical: '/posts',
+  },
+}
 
 export default async function PostsPage({
   searchParams,

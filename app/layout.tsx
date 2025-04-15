@@ -17,20 +17,40 @@ export const metadata: Metadata = {
     template: '%s | PerplexityAI'
   },
   description: 'Notes from the AI frontier',
+  keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'Technology', 'Innovation'],
+  authors: [{ name: 'PerplexityAI Team' }],
+  creator: 'PerplexityAI',
+  publisher: 'PerplexityAI',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://perplexityai.xyz'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'PerplexityAI',
     description: 'Notes from the AI frontier',
-    url: 'https://perplexityai.com',
+    url: 'https://perplexityai.xyz',
     siteName: 'PerplexityAI',
     images: [
       {
-        url: '/og-image.svg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
+        alt: 'PerplexityAI',
       }
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PerplexityAI',
+    description: 'Notes from the AI frontier',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -44,7 +64,17 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    shortcut: '/favicon.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
+    },
+  },
+  manifest: '/manifest.json',
+  verification: {
+    google: 'your-google-site-verification',
   },
 }
 

@@ -1,5 +1,19 @@
 import PostsList from "@/components/post-list"
 import Sidebar from "@/components/sidebar"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
+  openGraph: {
+    title: 'Home | PerplexityAI',
+    description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
+    url: 'https://perplexityai.xyz',
+  },
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function Home({
   searchParams,
