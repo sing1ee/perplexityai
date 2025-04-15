@@ -2,17 +2,27 @@ import Sidebar from "@/components/sidebar";
 import PostsList from "@/components/post-list";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: 'Posts',
-  description: 'Explore our latest articles and research on artificial intelligence and machine learning',
-  openGraph: {
-    title: 'Posts | PerplexityAI',
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: { page?: string }
+}): Promise<Metadata> {
+  const resolvedParams = await searchParams;
+  const page = resolvedParams.page || '1';
+  const canonicalUrl = page === '1' ? '/posts' : `/posts?page=${page}`;
+
+  return {
+    title: 'Posts',
     description: 'Explore our latest articles and research on artificial intelligence and machine learning',
-    url: 'https://perplexityai.xyz/posts',
-  },
-  alternates: {
-    canonical: '/posts',
-  },
+    openGraph: {
+      title: 'Posts | PerplexityAI',
+      description: 'Explore our latest articles and research on artificial intelligence and machine learning',
+      url: `https://perplexityai.xyz${canonicalUrl}`,
+    },
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  }
 }
 
 export default async function PostsPage({
