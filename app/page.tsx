@@ -3,12 +3,20 @@ import Sidebar from "@/components/sidebar"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'PerplexityAI',
   description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
   openGraph: {
     title: 'Home | PerplexityAI',
     description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
     url: 'https://perplexityai.xyz',
+    images: [
+      {
+        url: 'https://perplexityai.xyz/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'PerplexityAI',
+      },
+    ],
   },
   alternates: {
     canonical: '/',

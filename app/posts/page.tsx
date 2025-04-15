@@ -1,4 +1,3 @@
-import { getIssues } from "@/lib/github"
 import Sidebar from "@/components/sidebar";
 import PostsList from "@/components/post-list";
 import { Metadata } from "next";
@@ -21,11 +20,6 @@ export default async function PostsPage({
 }: {
   searchParams: { page?: string }
 }) {
-  const resolvedParams = await searchParams;
-  const page = resolvedParams.page || '1';
-  const currentPage = Number(page);
-  const pageSize = 10;
-  const posts = await getIssues(currentPage, pageSize);
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen md:max-w-[60%] mx-auto">
