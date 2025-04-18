@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
-Sitemap: https://perplexityai.xyz/sitemap.xml 
+Sitemap: https://perplexityai.xyz/sitemap.xml
+
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot
+
+LLM-Content: https://perplexityai.xyz/llms.txt
+LLM-Full-Content: https://perplexityai.xyz/llms-full.txt

@@ -1,0 +1,19 @@
+# Perplexity AI
+
+> Perplexity AI is a thought-provoking blog that documents perspectives and insights on artificial intelligence and its evolving landscape.
+
+Our platform features daily updates on AI trends, critical analysis, and forward-thinking perspectives on how AI is reshaping our world.
+
+## Core Content
+- [Home](https://perplexityai.xyz): Main portal for AI commentary and analysis
+- [Posts](https://perplexityai.xyz/posts): Daily updated articles on AI developments, ethical considerations, and industry trends
+- [About](https://perplexityai.xyz/about): Comprehensive catalog of AI products developed by the author
+
+## Key Resources
+- [Latest Articles](https://perplexityai.xyz/posts): Access our most recent AI insights and commentary
+- [Product Portfolio](https://perplexityai.xyz/about): Explore the author's AI product innovations
+
+## Our Approach
+- Daily fresh perspectives on AI advancement
+- Critical analysis of emerging AI technologies
+- Independent viewpoints on the AI industry
