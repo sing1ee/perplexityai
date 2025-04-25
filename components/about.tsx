@@ -46,6 +46,12 @@ const works = [
     url: "https://perplexityai.xyz/",
     icon: "https://perplexityai.xyz/favicon.svg",
     description: "Notes from the AI frontier"
+  },
+  {
+    title: "IAM Music Font",
+    url: "https://iammusicfont.com/",
+    icon: "https://iammusicfont.com/favicon.svg",
+    description: "AI Music Font Generator"
   }
 ]
 
