@@ -52,6 +52,12 @@ const works = [
     url: "https://iammusicfont.com/",
     icon: "https://iammusicfont.com/favicon.svg",
     description: "AI Music Font Generator"
+  },
+  {
+    title: "DeepWiki Directory",
+    url: "https://deepwiki.directory/",
+    icon: "https://deepwiki.directory/favicon.svg",
+    description: "DeepWiki Directory"
   }
 ]
 
