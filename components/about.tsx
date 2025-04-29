@@ -58,6 +58,12 @@ const works = [
     url: "https://deepwiki.directory/",
     icon: "https://deepwiki.directory/favicon.svg",
     description: "DeepWiki Directory"
+  },
+  {
+    title: "CountWordAI",
+    url: "https://countwordai.com/",
+    icon: "https://countwordai.com/favicon.ico",
+    description: "Count Word AI"
   }
 ]
 
