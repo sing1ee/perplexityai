@@ -18,7 +18,7 @@ export default async function PostsList({
       <h1 className="text-2xl sm:text-3xl font-serif italic mb-4 sm:mb-6">All Posts</h1>
       {posts.map((post) => (
         <article key={post.number} className="mb-8 sm:mb-12">
-          <Link href={post.parsedContent?.url} target="_blank" rel="noopener noreferrer" className="block group">
+          <Link href={`/posts/${post.number}`} className="block group">
             <h3 className="text-lg sm:text-xl font-serif font-semibold mb-1">{post.title}</h3>
             <div className="text-xs text-gray-500 mb-2 sm:mb-3 font-serif italic">
               {formatDate(post.created_at)}
