@@ -65,6 +65,13 @@ const works = [
     icon: "https://countwordai.com/favicon.ico",
     description: "Count Word AI"
   }
+  ,
+  {
+    title: "Ace Step",
+    url: "https://ace-step.club/",
+    icon: "https://ace-step.club/favicon.svg",
+    description: "Ace Step"
+  }
 ]
 
 export default function About() {
