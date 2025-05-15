@@ -71,6 +71,12 @@ const works = [
     url: "https://ace-step.club/",
     icon: "https://ace-step.club/favicon.svg",
     description: "Ace Step"
+  },
+  {
+    title: "Papyrus Font",
+    url: "https://papyrusfont.com/",
+    icon: "https://papyrusfont.com/favicon.svg",
+    description: "Papyrus Font"
   }
 ]
 
