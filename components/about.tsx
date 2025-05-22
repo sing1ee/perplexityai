@@ -1,10 +1,5 @@
 const works = [
-  {
-    title: "A2A Protocol",
-    url: "https://a2aprotocol.ai/",
-    icon: "https://a2aprotocol.ai/favicon.svg",
-    description: "Everything about A2A Protocol"
-  },
+
   {
     title: "PI Challenge",
     url: "https://pi-challenge.com/",
@@ -28,12 +23,6 @@ const works = [
     url: "https://qwq32.com",
     icon: "https://qwq32.com/favicon.svg",
     description: "AI answer generator by QWQ 32B"
-  },
-  {
-    title: "DeepBolt",
-    url: "https://deepbolt.xyz",
-    icon: "https://deepbolt.xyz/favicon.svg",
-    description: "Turn your ideas into OnePage"
   },
   {
     title: "CurateClick",
