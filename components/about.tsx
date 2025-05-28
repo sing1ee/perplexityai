@@ -66,6 +66,18 @@ const works = [
     url: "https://papyrusfont.com/",
     icon: "https://papyrusfont.com/favicon.svg",
     description: "Papyrus Font"
+  },
+  {
+    title: "Veo 3 Video",
+    url: "https://veo3video.net/",
+    icon: "https://veo3video.net/favicon.svg",
+    description: "Veo 3 Video"
+  },
+  {
+    title: "Veo 3 Directory",
+    url: "https://veo3.directory/",
+    icon: "https://veo3.directory/favicon.svg",
+    description: "Veo 3 Directory"
   }
 ]
 
