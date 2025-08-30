@@ -42,5 +42,3 @@ export default async function PostsPage({
     </div>
   )
 }
-
-export const runtime = 'edge';
