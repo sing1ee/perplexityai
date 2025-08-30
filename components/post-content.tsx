@@ -17,14 +17,14 @@ export default function PostContent({ post }: PostContentProps) {
       <div className="text-sm text-gray-500 mb-8 font-medium">
         {formatDate(post.created_at)}
       </div>
-      <div className="max-w-none prose prose-lg prose-gray dark:prose-invert prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-code:text-pink-600 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-pre:bg-gray-50 prose-pre:border prose-blockquote:border-l-4 prose-blockquote:border-blue-200 prose-blockquote:bg-blue-50 prose-blockquote:pl-4 prose-blockquote:py-2 prose-blockquote:italic">
+      <div className="max-w-none prose prose-lg prose-gray dark:prose-invert prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-[1.8] prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-code:text-pink-600 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-pre:bg-gray-50 prose-pre:border prose-blockquote:border-l-4 prose-blockquote:border-blue-200 prose-blockquote:bg-blue-50 prose-blockquote:pl-4 prose-blockquote:py-2 prose-blockquote:italic prose-li:leading-[1.8]">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeHighlight]}
           components={{
             // 自定义组件以优化中文显示
             p: ({ children }) => (
-              <p className="mb-6 text-gray-700 leading-[1.8] text-base tracking-wide">
+              <p className="mb-6 text-gray-700 leading-[1.8] text-base tracking-wide whitespace-pre-wrap">
                 {children}
               </p>
             ),
@@ -65,19 +65,21 @@ export default function PostContent({ post }: PostContentProps) {
                 {children}
               </pre>
             ),
-            ul: ({ children }) => (
-              <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
+            ul: ({ children, ...props }) => (
+              <ul className="list-disc pl-6 mb-4 space-y-1 text-gray-700 ml-4" {...props}>
                 {children}
               </ul>
             ),
-            ol: ({ children }) => (
-              <ol className="list-decimal list-inside mb-6 space-y-2 text-gray-700">
+            ol: ({ children, ...props }) => (
+              <ol className="list-decimal pl-6 mb-4 space-y-1 text-gray-700 ml-4" {...props}>
                 {children}
               </ol>
             ),
-            li: ({ children }) => (
-              <li className="leading-relaxed">
-                {children}
+            li: ({ children, ...props }) => (
+              <li className="leading-[1.8] mb-1 relative" {...props}>
+                <div className="pl-2">
+                  {children}
+                </div>
               </li>
             ),
             a: ({ href, children }) => (
@@ -90,6 +92,27 @@ export default function PostContent({ post }: PostContentProps) {
                 {children}
               </a>
             ),
+            // 处理强调和加粗文本
+            strong: ({ children }) => (
+              <strong className="font-bold text-gray-900">
+                {children}
+              </strong>
+            ),
+            em: ({ children }) => (
+              <em className="italic text-gray-700">
+                {children}
+              </em>
+            ),
+            // 处理换行符
+            br: () => <br className="mb-2" />,
+            // 处理代码块
+            text: ({ children }) => {
+              // 保持原始的换行和空格
+              if (typeof children === 'string') {
+                return children;
+              }
+              return children;
+            },
           }}
         >
           {post.body}
