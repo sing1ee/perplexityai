@@ -19,11 +19,10 @@ export default async function PostsList({
       {posts.map((post) => (
         <article key={post.number} className="mb-8 sm:mb-12">
           <Link href={`/posts/${post.number}`} className="block group">
-            <h3 className="text-lg sm:text-xl font-serif font-semibold mb-1">{post.title}</h3>
-            <div className="text-xs text-gray-500 mb-2 sm:mb-3 font-serif italic">
+            <h3 className="text-lg sm:text-xl font-serif font-semibold mb-1 group-hover:text-blue-600 transition-colors duration-200">{post.title}</h3>
+            <div className="text-xs text-gray-500 font-serif italic">
               {formatDate(post.created_at)}
             </div>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{post.parsedContent?.note.slice(0, 200)}...</p>
           </Link>
         </article>
       ))}

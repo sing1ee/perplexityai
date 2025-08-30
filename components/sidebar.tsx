@@ -5,7 +5,7 @@ export default function Sidebar() {
     <aside className="w-full md:w-64 p-8 md:p-12 bg-white">
       <div className="sticky top-8">
         <h1 className="font-serif text-3xl mb-1 text-center font-serif italic">PerplexityAI</h1>
-        <p className="text-center text-gray-600 italic font-serif text-sm mb-12">Notes from the AI frontier</p>
+        <p className="text-center text-gray-600 italic font-serif text-sm mb-12">Everything is about taste.</p>
 
         <nav className="mb-12">
           <ul className="space-y-4 text-center">
@@ -20,7 +20,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li>
-              <Link href="https://github.com/sing1ee/url-notes/issues" target="_blank" className="font-serif italic hover:text-gray-600">
+              <Link href="https://github.com/sing1ee/existential-perplexity/issues" target="_blank" className="font-serif italic hover:text-gray-600">
                 Discuss
               </Link>
             </li>
@@ -66,7 +66,7 @@ export default function Sidebar() {
         </div>
 
         <div className="text-xs text-center text-gray-500">
-          <p>Powered by Next.js</p>
+          <p>Powered by Taste</p>
           <p>© 2024-2025 Milo</p>
         </div>
       </div>

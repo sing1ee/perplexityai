@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'PerplexityAI',
     template: '%s | PerplexityAI'
   },
-  description: 'Notes from the AI frontier',
+  description: 'Everything is about taste',
   keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'Technology', 'Innovation'],
   authors: [{ name: 'PerplexityAI Team' }],
   creator: 'PerplexityAI',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'PerplexityAI',
-    description: 'Notes from the AI frontier',
+    description: 'Everything is about taste',
     url: 'https://perplexityai.xyz',
     siteName: 'PerplexityAI',
     images: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'PerplexityAI',
-    description: 'Notes from the AI frontier',
+    description: 'Everything is about taste',
     images: ['/og-image.png'],
   },
   robots: {

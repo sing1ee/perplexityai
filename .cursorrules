@@ -1,6 +1,8 @@
 始终使用中文回复。
 使用 next.js+tailwindcss，服务器端渲染的网站。
 使用 github api 获取 issue 列表数据进行展示。
+使用 bun 或者 pnpm 管理项目
+
 - 
 
 # Git Commit Message Guidelines

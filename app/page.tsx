@@ -4,10 +4,10 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: 'PerplexityAI',
-  description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
+  description: 'Everything is about taste',
   openGraph: {
     title: 'Home | PerplexityAI',
-    description: 'Welcome to PerplexityAI - Exploring the frontiers of artificial intelligence and machine learning',
+    description: 'Everything is about taste',
     url: 'https://perplexityai.xyz',
     images: [
       {
