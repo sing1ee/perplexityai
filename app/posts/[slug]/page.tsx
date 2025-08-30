@@ -4,9 +4,10 @@ import { getIssue } from "@/lib/github"
 import Sidebar from "@/components/sidebar";
 import PostContent from "@/components/post-content";
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   try {
-    const post = await getIssue(Number(params.slug));
+    const { slug } = await params;
+    const post = await getIssue(Number(slug));
 
     return (
       <div className="flex flex-col md:flex-row min-h-screen md:max-w-[60%] mx-auto">
