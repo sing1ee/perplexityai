@@ -65,7 +65,7 @@ export default function Sidebar() {
           </Link>
         </div>
 
-        <div className="text-xs text-center text-gray-500">
+        <div className="text-xs text-center text-gray-500 italic">
           <p>Powered by Taste</p>
           <p>© 2024-2025 Milo</p>
         </div>

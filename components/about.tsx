@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="p-4 sm:p-6 md:p-8 lg:p-12">
-      <h1 className="text-3xl font-bold mb-12 text-gray-900">About</h1>
+      <h1 className="text-3xl font-bold mb-12 text-gray-900 italic">About</h1>
       <div className="max-w-prose space-y-12">
         <div className="text-center">
           <p className="text-2xl font-light text-gray-800 italic leading-relaxed">
@@ -17,7 +17,7 @@ export default function About() {
               </svg>
             </div>
             <div>
-              <p className="text-sm text-gray-600 font-medium">Twitter</p>
+              <p className="text-sm text-gray-600 font-medium italic">Twitter</p>
               <a 
                 href="https://twitter.com/chmilo" 
                 target="_blank" 
@@ -36,7 +36,7 @@ export default function About() {
               </svg>
             </div>
             <div>
-              <p className="text-sm text-gray-600 font-medium">Email</p>
+              <p className="text-sm text-gray-600 font-medium italic">Email</p>
               <a 
                 href="mailto:zh.milo@gmail.com"
                 className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"

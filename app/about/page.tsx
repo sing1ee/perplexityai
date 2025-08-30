@@ -4,10 +4,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn more about PerplexityAI and our mission to advance artificial intelligence research',
+  description: 'Everything is about taste',
   openGraph: {
     title: 'About | PerplexityAI',
-    description: 'Learn more about PerplexityAI and our mission to advance artificial intelligence research',
+    description: 'Everything is about taste',
     url: 'https://perplexityai.xyz/about',
   },
   alternates: {
