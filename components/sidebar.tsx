@@ -46,21 +46,24 @@ export default function Sidebar() {
               <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
           </Link>
-          <Link href="https://x.com/chmilo" target="_blank" className="text-gray-500 hover:text-gray-700">
-            <span className="sr-only">Twitter</span>
+          <Link href="https://www.reddit.com/user/Disastrous-Net-8300/" target="_blank" className="text-gray-500 hover:text-gray-700">
+            <span className="sr-only">Reddit</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-twitter"
+              className="lucide lucide-reddit"
             >
-              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              <path d="M12 8c2.648 0 5.028.826 6.675 2.148a1 1 0 0 1 .217 1.397l-.221.334a1 1 0 0 1-1.417.226 7.004 7.004 0 0 0-10.508 0 1 1 0 0 1-1.417-.226l-.221-.334a1 1 0 0 1 .217-1.397C6.972 8.826 9.352 8 12 8z" />
+              <path d="M8.5 15.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M15.5 15.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path d="M8.5 15.5h7" />
             </svg>
           </Link>
         </div>
