@@ -8,6 +8,16 @@ export default function About() {
             Everything is about taste.
           </p>
         </div>
+        
+        <div className="mt-12">
+          <blockquote className="reddit-embed-bq" style={{height: '500px'}} data-embed-height="659">
+            <a href="https://www.reddit.com/r/Sky/comments/1n79x5a/is_that_a_gate/">is that a gate？</a>
+            <br/>
+            by<a href="https://www.reddit.com/user/Disastrous-Net-8300/">u/Disastrous-Net-8300</a>
+            in<a href="https://www.reddit.com/r/Sky/">Sky</a>
+          </blockquote>
+          <script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+        </div>
       </div>
     </div>
   )
