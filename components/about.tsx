@@ -9,14 +9,26 @@ export default function About() {
           </p>
         </div>
         
-        <div className="mt-12">
-          <blockquote className="reddit-embed-bq" style={{height: '500px'}} data-embed-height="659">
-            <a href="https://www.reddit.com/r/Sky/comments/1n79x5a/is_that_a_gate/">is that a gate？</a>
-            <br/>
-            by<a href="https://www.reddit.com/user/Disastrous-Net-8300/">u/Disastrous-Net-8300</a>
-            in<a href="https://www.reddit.com/r/Sky/">Sky</a>
-          </blockquote>
-          <script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <blockquote className="reddit-embed-bq" style={{height: '500px'}} data-embed-height="659">
+              <a href="https://www.reddit.com/r/Sky/comments/1n79x5a/is_that_a_gate/">is that a gate？</a>
+              <br/>
+              by<a href="https://www.reddit.com/user/Disastrous-Net-8300/">u/Disastrous-Net-8300</a>
+              in<a href="https://www.reddit.com/r/Sky/">Sky</a>
+            </blockquote>
+          </div>
+          
+          <div>
+            <blockquote className="reddit-embed-bq" style={{height: '500px'}} data-embed-height="740">
+              <a href="https://www.reddit.com/r/Sky/comments/1n87tzp/really_love_the_sunset_skyoc/">Really love the sunset sky[OC]</a>
+              <br/>
+              by<a href="https://www.reddit.com/user/Disastrous-Net-8300/">u/Disastrous-Net-8300</a>
+              in<a href="https://www.reddit.com/r/Sky/">Sky</a>
+            </blockquote>
+          </div>
+          
+          <script async src="https://embed.reddit.com/widgets.js" charSet="UTF-8"></script>
         </div>
       </div>
     </div>
